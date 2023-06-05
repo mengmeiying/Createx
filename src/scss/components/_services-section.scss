@@ -1,7 +1,119 @@
 .services-section {
   padding-top: 212px;
+  padding-bottom: 80px;
   background-image: url("../img/services-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  &__learn {
+    @include flex-all-center;
+    gap: 40px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--color-ebony);
+  }
+
+  &__list {
+    margin-bottom: 79px;
+  }
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.services-item {
+  position: relative;
+  display: block;
+  padding: 90px 39px;
+  background-color: var(--color-light);
+  border: 1px solid #E5E8ED;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+              0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+              0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+              0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+
+  &::before {
+    @include bg-cover;
+    content: "";
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    border-radius: inherit;
+    background-image: url("../img/services-placeholder.jpg");
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &--interior::before {
+    background-image: url("../img/services-1.jpg");
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    border-radius: inherit;
+    background-color: var(--color-ebony);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__content {
+    @include flex-column-center;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 24px;
+    fill: var(--color-primary);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-ebony);
+    transition: color 0.3s ease-in-out;
+  }
+
+  &:hover {
+    .services-item__icon {
+      fill: var(--color-light);
+    }
+
+    .services-item__title {
+      color: var(--color-light);
+    }
+
+    &::before {
+      opacity: 1;
+    }
+    &::after {
+      opacity: 0.6;
+    }
+  }
 }
