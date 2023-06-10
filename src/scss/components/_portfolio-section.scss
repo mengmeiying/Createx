@@ -1,0 +1,14 @@
+.portfolio-section {
+  background-color: var(--color-light);
+
+  &__top {
+    @include flex-all-sb;
+    align-items: flex-end;
+  }
+
+  &__title {
+    max-width: 710px;
+    padding-bottom: 12px;
+    margin: 0;
+  }
+}
