@@ -1,5 +1,8 @@
 .slider-nav {
   @include flex-v-center;
+
+  position: relative;
+  z-index: 15;
   transform: translateX(12px);
 
   &__btn {

@@ -149,6 +149,7 @@ a {
   line-height: 20px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--color-light);
 
   &--fill {
@@ -162,7 +163,8 @@ a {
     }
 
     &-primary {
-
+      border-color: var(--color-primary);
+      color: var(--color-primary);
     }
   }
 }
