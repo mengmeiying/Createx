@@ -1,0 +1,15 @@
+.partners {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: var(--color-lightgray);
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 120px);
+    gap: 102px;
+  }
+}
