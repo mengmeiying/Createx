@@ -1,0 +1,53 @@
+.figures {
+  padding-top: 180px;
+  padding-bottom: 150px;
+  background-image: url(../img/figures-bg.png);
+  background-position: top -150px left;
+  background-repeat: no-repeat;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 148px);
+    gap: 48px;
+    max-width: 736px;
+    margin: 0 auto;
+  }
+}
+
+.figures-element {
+  @include flex-column-center;
+
+  &__circle {
+    @include flex-all-center;
+    position: relative;
+    height: 148px;
+    width: 148px;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__value {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--color-ebony);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-ebony);
+  }
+}
