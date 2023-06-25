@@ -36,7 +36,8 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -196,4 +197,42 @@ a {
 
 .section-offset {
   padding-top: 120px;
+}
+
+.custom-checkbox {
+  position: relative;
+  &__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  &__text {
+    display: block;
+    padding-left: 27px;
+    color: var(--color-gray);
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__box {
+    position: absolute;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #B3B7BC;
+  }
+
+  &__input:checked+&__box {
+    border: none;
+    background-image: url("../img/checked.png");
+    background-color: var(--color-primary);
+  }
+
+  &__input:disabled+&__box {
+    background-color: #F4F5F6;
+  }
+
 }
