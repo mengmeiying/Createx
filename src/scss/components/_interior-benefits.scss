@@ -1,0 +1,80 @@
+.interior-benefits {
+  padding-top: 81px;
+  padding-bottom: 49px;
+  background-color: var(--color-ebony);
+  color: var(--color-light);
+
+  &__title {
+    color: var(--color-light);
+  }
+
+  &__content {
+    color: rgba(#ffffff, 0.6);
+  }
+
+  &__list {
+    --interior-benefits-gap: 94px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--interior-benefits-gap) * 2);
+    margin-bottom: 27px;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 70px;
+    text-align: center;
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: calc(-1 * var(--interior-benefits-gap));
+        height: 100%;
+        width: 1px;
+        background-image: url("../img/divider-benefits.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &--terms {
+      background-image: url("../img/terms.svg");
+    }
+
+    &--workers {
+      background-image: url("../img/workers.svg");
+    }
+
+    &--control {
+      background-image: url("../img/camera.svg");
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-light);
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgba(#ffffff, 0.6);
+  }
+
+  &__btn {
+    position: relative;
+    top: 75px;
+    width: 390px;
+  }
+}
