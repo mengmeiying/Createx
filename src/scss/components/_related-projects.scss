@@ -1,0 +1,33 @@
+.related-projects {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  background-color: var(--color-light);
+
+  &__top {
+    @include flex-all-sb;
+    align-items: flex-end;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    max-width: 710px;
+    padding-bottom: 12px;
+    margin: 0;
+  }
+
+  &__slider {
+    padding: 100px;
+    margin: -100px;
+
+    .swiper-slide:not(.swiper-slide-visible) {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+  }
+
+  &__learn {
+    margin-top: 80px;
+  }
+
+}

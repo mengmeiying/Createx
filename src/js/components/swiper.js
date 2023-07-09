@@ -24,3 +24,15 @@ const testimonialsSwiper = new Swiper(testimonialsEl, {
     prevEl: '.testimonials__prev'
   }
 });
+
+const relatedProjectsEl = document.querySelector('.related-projects__slider');
+const relatedProjectsSwiper = new Swiper(relatedProjectsEl, {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  watchSlidesProgress: true,
+  navigation: {
+    nextEl: '.related-projects__next',
+    prevEl: '.related-projects__prev'
+  }
+});
