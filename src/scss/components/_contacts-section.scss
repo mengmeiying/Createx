@@ -3,12 +3,6 @@
   padding-top: 80px;
   padding-bottom: 80px;
   background-image: url("../img/contacts-section.jpg");
-
-  &__container {
-    display: grid;
-    gap: var(--grid-gap);
-    grid-template-columns: repeat(12, 1fr);
-  }
 }
 
 .contacts-form {

@@ -2,12 +2,6 @@
   padding-top: 120px;
   padding-bottom: 120px;
 
-  &__container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: var(--grid-gap);
-  }
-
   &__image {
     grid-column: 7 span;
   }

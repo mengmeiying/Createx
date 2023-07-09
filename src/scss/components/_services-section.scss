@@ -12,13 +12,14 @@
 }
 
 .services-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--grid-gap);
+  &__item {
+    grid-column: 3 span;
+  }
 }
 
 .services-item {
   position: relative;
+
   display: block;
   padding: 90px 39px;
   background-color: var(--color-light);

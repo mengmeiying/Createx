@@ -3,14 +3,9 @@
   padding-bottom: 120px;
   counter-reset: how-we-do;
 
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--grid-gap);
-  }
-
   &__item {
     position: relative;
+    grid-column: 3 span;
     padding-top: 38px;
 
     &::before {

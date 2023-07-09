@@ -8,10 +8,7 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 255px 255px;
-    gap: var(--grid-gap);
     margin-bottom: 80px;
   }
 
