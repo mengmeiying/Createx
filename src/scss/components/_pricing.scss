@@ -1,0 +1,123 @@
+.pricing {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 41px;
+  background-color: var(--color-lightgray);
+
+  &::before {
+    @include bg-cover;
+
+    content: "";
+    position: absolute;
+    width: 618px;
+    height: 944px;
+    top: 0;
+    left: 0;
+    background-image: url('../img/bg-image-price.png');
+  }
+}
+
+.table-wrapper {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #E5E8ED;
+  background: var(--color-light);
+
+  /* shadow/small */
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  &__body {
+    .table__row {
+      &:nth-child(odd) {
+        background-color: var(--color-lightgray);
+      }
+
+      &:last-child {
+        .table__column {
+          padding-top: 28px;
+          padding-bottom: 31px;
+        }
+      }
+    }
+  }
+
+  &__row {}
+
+  &__th {
+    padding: 30px 15px 24px;
+    color: var(--color-ebony);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+
+    &:first-child {
+      padding-left: 24px;
+      text-align: left;
+      vertical-align: bottom;
+    }
+  }
+
+  &__column {
+    padding: 16px 0;
+    text-align: center;
+
+    &:first-child {
+      padding-left: 24px;
+      text-align: left;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 2px;
+    color: var(--color-ebony);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  &__per {
+    color: var(--color-storm);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__column {
+    color: var(--color-gray);
+    line-height: 160%;
+  }
+
+  &__check {
+    @include bg-cover;
+
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url('../img/form-check.svg');
+    font-size: 0;
+    vertical-align: middle;
+  }
+
+  &__false {
+    font-size: 0;
+  }
+
+  &__btn {
+    padding: 10px 23px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
