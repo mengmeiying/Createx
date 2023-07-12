@@ -61,6 +61,7 @@
       height: 48px;
       fill: var(--color-primary);
       transition: fill 0.3s ease-in-out;
+      pointer-events: none;
     }
 
     & span {
@@ -69,9 +70,23 @@
       font-weight: 700;
       line-height: 160%;
       transition: color 0.3s ease-in-out;
+      pointer-events: none;
     }
 
     &:hover {
+      background-color: var(--color-primary);
+
+      & svg {
+        fill: var(--color-light);
+      }
+
+      & span {
+        color: var(--color-light);
+      }
+    }
+
+    &--active {
+      pointer-events: none;
       background-color: var(--color-primary);
 
       & svg {
@@ -88,5 +103,13 @@
 .portfolio-tabs {
   &__item {
     grid-column: 4 span;
+
+    &--hidden {
+      display: none;
+    }
+
+    &--visible {
+      display: block;
+    }
   }
 }
