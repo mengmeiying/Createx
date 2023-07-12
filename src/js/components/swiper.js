@@ -1,6 +1,6 @@
 // Подключение свайпера
-import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination]);
+import Swiper, { Navigation, Pagination, Thumbs } from 'swiper';
+Swiper.use([Navigation, Pagination, Thumbs]);
 const portfolioEl = document.querySelector('.portfolio-section__slider');
 const portfolioSwiper = new Swiper(portfolioEl, {
   slidesPerView: 3,
@@ -35,4 +35,28 @@ const relatedProjectsSwiper = new Swiper(relatedProjectsEl, {
     nextEl: '.related-projects__next',
     prevEl: '.related-projects__prev'
   }
+});
+
+
+
+const workImagesElNav = document.querySelector('.work-images__slider-nav');
+const workImagesSwiperNav = new Swiper(workImagesElNav, {
+  slidesPerView: 10,
+  spaceBetween: 20,
+  freeMode: true,
+
+});
+
+const workImagesEl = document.querySelector('.work-images__slider');
+const workImagesSwiper = new Swiper(workImagesEl, {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  watchSlidesProgress: true,
+  thumbs: {
+    swiper: workImagesSwiperNav,
+  },
+  navigation: {
+    nextEl: '.work-images__next',
+    prevEl: '.work-images__prev'
+  },
 });

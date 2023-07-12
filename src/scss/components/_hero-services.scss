@@ -42,4 +42,17 @@
   &--work {
     background-image: url('../img/hero-work.png');
   }
+
+  &--modern-cottage {
+    background-image: url('../img/hero-modern-cottage.png');
+    background-color: var(--color-light);
+
+    & .page-hero__title {
+      margin-bottom: 60px;
+      font-family: Ubuntu;
+      font-size: 64px;
+      line-height: 120%;
+      text-transform: capitalize;
+    }
+  }
 }
