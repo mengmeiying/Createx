@@ -16,4 +16,10 @@
   &__logo--last {
     filter: grayscale(1) opacity(0.5);
   }
+
+  &--work {
+    padding-top: 180px;
+    padding-bottom: 118px;
+    background-color: var(--color-light);
+  }
 }
