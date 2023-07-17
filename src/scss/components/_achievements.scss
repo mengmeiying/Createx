@@ -1,0 +1,53 @@
+.achievements {
+  padding-top: 123px;
+  padding-bottom: 120px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 86px;
+  }
+
+  &__item {
+    @include flex-column-center;
+    padding-top: 68px;
+    background-image: url('../img/achievements-1.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 48px 48px;
+
+    &--renovated {
+      background-image: url('../img/achievements-2.svg');
+    }
+
+    &--specialists {
+      background-image: url('../img/achievements-3.svg');
+    }
+
+    &--finished {
+      background-image: url('../img/achievements-4.svg');
+    }
+  }
+
+  &__value {
+    margin-bottom: 9px;
+    color: var(--color-primary);
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+
+    & sup {
+      font-size: 32px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    color: var(--color-ebony);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+  }
+}
