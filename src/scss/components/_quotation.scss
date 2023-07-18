@@ -1,0 +1,79 @@
+.quotation {
+  padding-top: 120px;
+  padding-bottom: 109px;
+  background-image: url('../img/quotation-bg.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__content {
+    position: relative;
+    left: -30px;
+    top: -140px;
+    flex-shrink: 0;
+    width: 735px;
+    border-radius: 4px;
+    background: var(--white, #FFF);
+
+    /* shadow/small */
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+                0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+                0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+                0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+  }
+}
+
+.quote {
+  margin: 0;
+  padding: 98px 105px 67px 75px;
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 60px;
+    margin-bottom: 51px;
+    background-image: url('../img/braces.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  &__descr {
+    margin: 0;
+    color: var(--color-ebony);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__footer {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 60px;
+    background-image: url('../img/signature.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 5px right;
+  }
+
+  &__author {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-ebony);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+  }
+
+  &__position {
+    display: block;
+    color: var(--color-storm);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
