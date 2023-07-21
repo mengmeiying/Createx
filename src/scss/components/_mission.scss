@@ -1,12 +1,21 @@
 .mission {
   background-color: var(--color-light);
 
+  &--about-us {
+    padding-top: 81px;
+    padding-bottom: 90px;
+    background-color: var(--color-lightgray);
+  }
+
   &__list {
     --mission-gap: 94px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: calc(var(--mission-gap) * 2);
-    margin-bottom: 27px;
+  }
+
+  &__form {
+    margin-top: 27px;
   }
 
   &__item {
