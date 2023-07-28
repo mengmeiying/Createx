@@ -60,3 +60,34 @@ const workImagesSwiper = new Swiper(workImagesEl, {
     prevEl: '.work-images__prev'
   },
 });
+
+const historyEl = document.querySelector('.history__slider');
+const historySwiper = new Swiper(historyEl, {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  watchSlidesProgress: true,
+  navigation: {
+    nextEl: '.history__next',
+    prevEl: '.history__prev'
+  }
+});
+
+const historyBtns = document.querySelectorAll('.history-nav__btn');
+
+historySwiper.on('slideChange', function() {
+  const currentButton = document.querySelector(`.history-nav__btn[data-index="${historySwiper.realIndex}"]`);
+  historyBtns.forEach(el => el.classList.remove('history-nav__btn--current'));
+    currentButton.classList.add('history-nav__btn--current');
+})
+
+
+historyBtns.forEach((btn, idx) => {
+  btn.setAttribute('data-index', idx);
+  btn.addEventListener('click', function(e) {
+    historyBtns.forEach(el => el.classList.remove('history-nav__btn--current'));
+    btn.classList.add('history-nav__btn--current');
+    const index = e.currentTarget.dataset.index;
+    historySwiper.slideTo(index);
+  })
+})
