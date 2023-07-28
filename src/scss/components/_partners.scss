@@ -10,7 +10,7 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(6, 120px);
-    gap: 102px;
+    gap: 37px 102px;
   }
 
   &__logo--last {
@@ -21,5 +21,15 @@
     padding-top: 180px;
     padding-bottom: 118px;
     background-color: var(--color-light);
+  }
+
+  &--about {
+    padding-top: 120px;
+    padding-bottom: 78px;
+    background-color: var(--color-light);
+
+    .partners__title {
+      margin-bottom: 22px;
+    }
   }
 }
