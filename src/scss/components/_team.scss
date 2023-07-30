@@ -1,0 +1,89 @@
+.team {
+  padding-top: 98px;
+  padding-bottom: 120px;
+  background-image: url('../img/team-bg.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+
+
+  &__list {
+    gap: 59px var(--grid-gap);
+  }
+
+  &__image {
+    border-radius: 4px;
+  }
+
+  &__item {
+    grid-column: 3 span;
+    &:hover {
+      & .team__socials {
+        transform: none;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    overflow: hidden
+  }
+
+  &__descr {
+    @include flex-column-center;
+    padding: 16px 20px 0 20px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 5px;
+    color: var(--color-gray);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__status {
+    margin: 0;
+    color: var(--color-storm);
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  &__positions {
+    margin-top: 80px;
+    margin-bottom: 0;
+
+    & a {
+      color: var(--color-primary);
+      text-decoration-line: underline;
+    }
+  }
+
+  &__socials {
+    @include flex-all-center;
+    gap: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ff5930b3;
+    transform: translateY(100%);
+    transition: transform 0.25s ease-in-out;
+  }
+
+  &__link {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+      fill: var(--color-light);
+    }
+  }
+}
