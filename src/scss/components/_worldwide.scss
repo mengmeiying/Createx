@@ -1,0 +1,13 @@
+.worldwide {
+  padding-top: 80px;
+  padding-bottom: 121px;
+  background-color: var(--color-lightgray);
+
+  &__title {
+    margin-bottom: 60px;
+  }
+}
+
+.worldwide-map {
+  @include flex-all-center;
+}
