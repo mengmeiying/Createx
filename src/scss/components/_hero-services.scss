@@ -60,4 +60,10 @@
   &--about-us {
     background-image: url('../img/hero-about-us-bg.png');
   }
+
+  &--positions {
+    padding-bottom: 144px;
+    background-image: url('../img/hero-positions.png');
+    background-position: bottom right 5px;
+  }
 }
