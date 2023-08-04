@@ -1,0 +1,67 @@
+.comments {
+  padding-bottom: 60px;
+  &__wrapper {
+    max-width: 840px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+  }
+}
+
+.comment {
+  display: flex;
+  gap: 30px;
+
+  &__left {
+    flex-shrink: 0;
+    width: 150px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 8px;
+    color: var(--color-ebony);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__date {
+    color: var(--color-storm);
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 16px;
+    color: var(--color-gray);
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  &__mention {
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  &__btn {
+    padding-left: 24px;
+    color: var(--color-storm);
+    font-size: 14px;
+    line-height: 150%;
+    background-image: url("../img/share-arrow.svg");
+    background-size: 16px 16px;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+}
