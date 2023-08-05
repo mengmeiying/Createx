@@ -1,0 +1,44 @@
+.post-form {
+  padding-top: 60px;
+  padding-bottom: 180px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 30px;
+    margin-bottom: 48px;
+  }
+
+  &__textarea-label {
+    grid-column: 2 span;
+  }
+
+  &__caption {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 52px;
+
+    &--big {
+      height: 100px;
+      padding: 15px 16px;
+      resize: none;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+  }
+}
