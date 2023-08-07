@@ -1,0 +1,121 @@
+.contacts-us {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  &__img {
+    grid-column: 5 span;
+  }
+
+  &__form {
+    width: 600px;
+    grid-column: 7 span;
+    justify-self: end;
+  }
+
+  &__inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px 30px;
+    margin-bottom: 41px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 52px;
+
+    &::placeholder {
+      font-size: 16px;
+    }
+
+    &--big {
+      height: 128px;
+      padding: 16px 15px;
+      resize: none;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  &__textarea-label {
+    grid-column: 2 span;
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+  }
+
+  &__checkbox {
+    max-width: 315px;
+  }
+
+  &__button {
+    padding: 15px 41px;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+
+  &__fields {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__radio-wrapper {
+    display: flex;
+    gap: 26px;
+    padding-top: 14px;
+  }
+
+  .choices {
+    width: 100%;
+  }
+
+  .choices__list--dropdown .choices__item--selectable {
+    padding-right: 10px;
+  }
+
+  .choices__list--dropdown .choices__item--selectable.is-highlighted:after {
+    display: none;
+  }
+
+  .choices[data-type*=select-one] .choices__inner {
+    height: 52px;
+    border-radius: 4px;
+    border: 1px solid var(--gray-400, #D7DADD);
+    background: var(--color-lightgray);
+  }
+
+  .choices__list--single .choices__item {
+    color: var(--color-gray);
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  .choices[data-type*=select-one]:after {
+    top: 22px;
+    right: 20px;
+    height: 10px;
+    width: 10px;
+    border-width: 0 1px 1px 0;
+    border-color: var(--color-gray);
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  }
+  .choices[data-type*=select-one].is-open:after {
+    top: 32px;
+    transform: rotate(225deg);
+  }
+
+  .choices__list--dropdown {
+    background-color: var(--color-lightgray);
+  }
+}
