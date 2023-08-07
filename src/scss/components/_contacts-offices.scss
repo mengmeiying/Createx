@@ -1,0 +1,67 @@
+.offices {
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+
+  &__item {
+    max-width: 250px;
+
+    color: var(--color-ebony);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    color: var(--color-ebony);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__address {
+    margin: 0;
+    margin-bottom: 3px;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  .social {
+    justify-content: center;
+    gap: 24px;
+    padding-top: 14px;
+
+    &__link {
+      width: 32px;
+      height: 32px;
+      color: var(--color-storm);
+    }
+  }
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__title {
+    color: var(--color-storm);
+  }
+
+  &__link {
+    color: inherit;
+  }
+
+}
