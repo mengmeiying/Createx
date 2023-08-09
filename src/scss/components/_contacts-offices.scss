@@ -37,6 +37,22 @@
     margin-bottom: 20px;
     color: var(--color-primary);
     text-decoration: underline;
+
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      border-radius: 4px;
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+
+    &:hover {
+      color: var(--color-primary-contrast);
+    }
+
+    &:active {
+      color: var(--color-primary-contrast);
+    }
   }
 
   .social {
@@ -48,6 +64,8 @@
       width: 32px;
       height: 32px;
       color: var(--color-storm);
+
+
     }
   }
 }
@@ -63,6 +81,22 @@
 
   &__link {
     color: inherit;
+
+    transition: color 0.3s ease-in-out;
+
+      &:focus {
+        border-radius: 4px;
+        outline: 2px solid var(--color-primary);
+        outline-offset: 3px;
+      }
+
+      &:hover {
+        color: var(--color-primary);
+      }
+
+      &:active {
+        color: var(--color-primary);
+      }
   }
 
 }

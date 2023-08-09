@@ -52,16 +52,52 @@
   &__mention {
     color: var(--color-primary);
     font-weight: 700;
+
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      border-radius: 4px;
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+
+    &:hover {
+      color: var(--color-primary-contrast);
+    }
+
+    &:active {
+      color: var(--color-primary-contrast);
+    }
   }
 
   &__btn {
-    padding-left: 24px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
     color: var(--color-storm);
     font-size: 14px;
     line-height: 150%;
-    background-image: url("../img/share-arrow.svg");
-    background-size: 16px 16px;
-    background-position: left center;
-    background-repeat: no-repeat;
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      border-radius: 4px;
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-primary);
+    }
+
+    & svg {
+      height: 16px;
+      width: 16px;
+      color: inherit;
+      fill: currentColor;
+    }
   }
 }

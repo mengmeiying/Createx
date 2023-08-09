@@ -74,6 +74,20 @@
     line-height: 150%;
     transition: color 0.3s ease-in-out;
 
+    &:focus {
+      border-radius: 4px;
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-primary);
+    }
+
     &--current {
       color: var(--color-primary);
     }

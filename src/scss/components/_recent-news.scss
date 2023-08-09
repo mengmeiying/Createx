@@ -180,6 +180,22 @@
     height: 24px;
     color: var(--color-storm);
 
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      border-radius: 4px;
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-primary);
+    }
+
     & svg {
       height: 100%;
       width: 100%;
