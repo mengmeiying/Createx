@@ -152,20 +152,68 @@ a {
   text-transform: uppercase;
   text-align: center;
   color: var(--color-light);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 
   &--fill {
     border-color: var(--color-primary);
     background-color: var(--color-primary);
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+
+    &:hover {
+      border-color: var(--color-primary-contrast);
+      background-color: var(--color-primary-contrast);
+    }
+
+    &:active {
+      border-color: var(--color-primary-contrast);
+      background-color: var(--color-primary-contrast);
+    }
   }
 
   &--stroke {
     &-light {
       border-color: var(--color-light);
+
+      &:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 3px;
+      }
+
+      &:hover {
+        border-color: var(--color-gray);
+        background-color: var(--color-gray);
+        color: var(--color-light);
+      }
+
+      &:active {
+        border-color: var(--color-ebony);
+        background-color: var(--color-ebony);
+        color: var(--color-light);
+      }
     }
 
     &-primary {
       border-color: var(--color-primary);
       color: var(--color-primary);
+
+      &:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 3px;
+      }
+
+      &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-light);
+      }
+
+      &:active {
+        background-color: var(--color-primary);
+        color: var(--color-light);
+      }
     }
   }
 }
@@ -201,6 +249,12 @@ a {
 
 .custom-checkbox {
   position: relative;
+
+  &:focus-within {
+    border-radius: 4px;
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
   &__input {
     position: absolute;
     -webkit-appearance: none;
@@ -290,3 +344,4 @@ a {
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-gap);
 }
+

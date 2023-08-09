@@ -37,6 +37,20 @@
     background-color: var(--color-primary);
 
     transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+
+    &:hover {
+      background-color: var(--color-primary-contrast);
+    }
+
+    &:active {
+      background-color: var(--color-primary-contrast);
+    }
 
     svg {
       height: 26px;
@@ -56,6 +70,21 @@
     width: 40px;
     border-radius: 100%;
     background: rgba(#fff, 0.12);
+
+    transition: background-color 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+
+    &:hover {
+      background-color: rgba(#fff, 0.30);
+    }
+
+    &:active {
+      background-color: rgba(#fff, 0.50);
+    }
 
     svg {
       height: 20px;

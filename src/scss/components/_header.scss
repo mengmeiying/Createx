@@ -20,3 +20,10 @@
     margin-left: -112px;
   }
 }
+
+.logo {
+  &:focus {
+    outline: 1px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+}
