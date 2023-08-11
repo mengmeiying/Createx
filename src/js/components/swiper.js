@@ -73,6 +73,22 @@ const historySwiper = new Swiper(historyEl, {
   }
 });
 
+const mainHeroEl = document.querySelector('.hero__swiper');
+const mainHeroSwiper = new Swiper(mainHeroEl, {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  watchSlidesProgress: true,
+  navigation: {
+    nextEl: '.hero__next',
+    prevEl: '.hero__prev'
+  },
+  pagination: {
+    el: '.hero__pag',
+    type: 'bullets',
+    clickable: true
+  }
+});
+
 const historyBtns = document.querySelectorAll('.history-nav__btn');
 
 historySwiper.on('slideChange', function() {

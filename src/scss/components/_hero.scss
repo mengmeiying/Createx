@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   padding-top: 220px;
   padding-bottom: 354px;
   color: var(--light-color);
@@ -15,5 +16,93 @@
   &__btns {
     display: flex;
     gap: 24px;
+  }
+
+  &__slider-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60%;
+    padding: 0 32px;
+    justify-content: space-between;
+    transform: none;
+
+    .slider-btn {
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      background-color: var(--color-light);
+
+      &:hover {
+        opacity: 0.7;
+        color: var(--color-gray);
+      }
+    }
+
+    .swiper-button-disabled {
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 0.5;
+        color: var(--color-gray);
+      }
+    }
+  }
+
+  &__pag {
+    counter-reset: pag;
+
+    display: flex;
+    gap: 4px;
+
+    bottom: 120px !important;
+    max-width: var(--container-width);
+    padding-left: max(15px, calc((100% - var(--container-width) + var(--container-offset) * 2) / 2));
+    text-align: left;
+
+    .swiper-pagination-bullet {
+      border-radius: 0;
+      width: 178px;
+      height: auto;
+      background-color: transparent;
+      text-align: left;
+      opacity: 1;
+
+      &::before {
+        counter-increment: pag;
+        content: "0"counter(pag);
+        position: relative;
+        top: -8px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 150%;
+        opacity: 0.6;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        border-radius: 4px;
+        width: 178px;
+        height: 2px;
+        background-color: var(--color-light);
+        opacity: 0.3;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      &-active {
+        &::before {
+          opacity: 1;
+        }
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+
   }
 }
