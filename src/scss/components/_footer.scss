@@ -5,6 +5,7 @@
   color: rgba(255,255,255,0.6);
 
   &__container {
+    position: relative;
     gap: 49px 30px;
   }
 
@@ -189,5 +190,47 @@
 
   &__col:last-child {
     padding-left: 33px;
+  }
+}
+
+.to-top {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  right: calc((100% - 1260px) / 2 + 15px);
+  bottom: 80px;
+  cursor: pointer;
+
+  &__text {
+    margin-right: 16px;
+    color: var(--color-light);
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+
+    text-shadow: 0px 3px 8px rgb(54, 54, 54),
+  }
+
+  &__icon {
+    @include flex-all-center;
+
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    transition: background-color 0.3s ease-in-out;
+
+    & svg {
+      height: 24px;
+      width: 24px;
+      fill: var(--color-light);
+    }
+  }
+
+  &:hover {
+    .to-top__icon {
+      background-color: var(--color-primary-contrast);
+    }
   }
 }
