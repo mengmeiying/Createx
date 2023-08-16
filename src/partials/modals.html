@@ -1,0 +1,67 @@
+<div class="graph-modal">
+  <div class="graph-modal__container subscribe positions-modal" role="dialog" aria-modal="true"
+    data-graph-target="subscribe">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content ">
+      <form action="" class="positions-modal__form">
+        <h2 class="positions-modal__title title title--center">Subscribe to our newsletter</h2>
+        <label class="form-field positions-modal__field">
+          <span class="form-field__caption positions-modal__caption">Name*</span>
+          <input class="form-field__input positions-modal__input" type="text" name="name" placeholder="Your name"
+            required>
+        </label>
+        <label class="form-field positions-modal__field">
+          <span class="form-field__caption positions-modal__caption">Email*</span>
+          <input class="form-field__input positions-modal__input" type="email" name="email"
+            placeholder="Your working email" required>
+        </label>
+        <button class="btn-reset positions-modal__btn btn btn--fill" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="graph-modal__container positions-modal send-cv" role="dialog" aria-modal="true"
+    data-graph-target="send-cv">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <form action="" class="positions-modal__form">
+        <h2 class="positions-modal__title title title--center">Send your CV</h2>
+        <label class="form-field positions-modal__field">
+          <span class="form-field__caption positions-modal__caption">Name*</span>
+          <input class="form-field__input positions-modal__input" type="text" name="name" placeholder="Your name"
+            required>
+        </label>
+        <label class="form-field positions-modal__field">
+          <span class="form-field__caption positions-modal__caption">Location*</span>
+          <select name="location" class="positions-modal__select">
+            <option value="">Choose your location</option>
+            <option value="New_York">New York</option>
+          </select>
+        </label>
+        <label class="form-field positions-modal__field">
+          <span class="form-field__caption positions-modal__caption">Phone*</span>
+          <input class="form-field__input positions-modal__input" type="tel" name="phone"
+            placeholder="Your phone number" required>
+        </label>
+        <label class="form-field positions-modal__field">
+          <span class="form-field__caption positions-modal__caption">Email*</span>
+          <input class="form-field__input positions-modal__input" type="email" name="email"
+            placeholder="Your working email" required>
+        </label>
+        <label class="form-field positions-modal__field positions-modal__textarea-label">
+          <span class="form-field__caption positions-modal__caption">Covering letter</span>
+          <textarea class="form-field__input positions-modal__input positions-modal__input--big" name="" id="" cols="30"
+            rows="10" placeholder="Your covering letter" required=""></textarea>
+        </label>
+        <label class="form-field form-field--radio custom-file positions-modal__field">
+          <input class="custom-file__input" type="file" name="cv" id="cv" value="cv">
+          <span class="custom-file__box"></span>
+          <span class="form-field__caption positions-modal__caption custom-file__text">Attach your CV*</span>
+        </label>
+        <button class="btn-reset positions-modal__btn btn btn--fill" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</div>

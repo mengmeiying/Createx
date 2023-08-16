@@ -346,3 +346,34 @@ a {
   gap: var(--grid-gap);
 }
 
+.custom-file {
+  position: relative;
+
+  &__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 0;
+    padding-left: 34px;
+    color: var(--color-gray);
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__box {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/attach.svg');
+  }
+}

@@ -7,4 +7,13 @@ elements.forEach(el => {
   });
 })
 
+const elementsPositions = document.querySelectorAll('.positions-modal__select');
+elementsPositions.forEach(el => {
+  const choices2 = new Choices(el, {
+    shouldSort: false,
+    position: 'bottom',
+    searchEnabled: false
+  });
+})
+
 
