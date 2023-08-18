@@ -5,11 +5,19 @@
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @include mini-desktop {
+      gap: 15px;
+    }
   }
 
   &__content {
     padding-top: 60px;
     max-width: 612px;
+
+    @include mini-desktop {
+      max-width: 55%;
+    }
   }
 
   &__nav {
@@ -27,7 +35,7 @@
     bottom: -60px;
 
     @include mini-desktop {
-      width: 350px;
+      width: 43%;
     }
   }
 

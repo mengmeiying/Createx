@@ -22,6 +22,10 @@
     @include mini-desktop {
       margin-left: 0;
     }
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 

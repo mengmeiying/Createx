@@ -227,6 +227,10 @@ a {
   line-height: 130%;
   color: var(--color-ebony);
 
+  @include tablet {
+    font-size: 36px;
+  }
+
   &--center {
     text-align: center;
   }
@@ -375,5 +379,17 @@ a {
     width: 24px;
     height: 24px;
     background-image: url('../img/attach.svg');
+  }
+}
+
+.burger {
+  @include burger;
+  display: none;
+  --burger-width: 30px;
+  --burger-height: 15px;
+  --burger-line-height: 1px;
+
+  @include tablet {
+    display: block;
   }
 }

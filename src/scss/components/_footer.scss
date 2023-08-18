@@ -69,6 +69,10 @@
       background-size: 16px 16px;
     }
   }
+
+  &__logo {
+    flex-shrink: 0;
+  }
 }
 
 .footer-form {

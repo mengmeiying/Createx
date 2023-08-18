@@ -18,6 +18,15 @@
     0px 26px 24px -10px rgba(30, 33, 44, 0.10),
     0px 60px 80px -20px rgba(30, 33, 44, 0.16);
 
+    @include mini-desktop {
+      grid-column: 7 / -1;
+    }
+
+
+    @include tablet {
+      grid-column: 6 / -1;
+    }
+
     &__title {
       margin: 0;
       margin-bottom: 24px;

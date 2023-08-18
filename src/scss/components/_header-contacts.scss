@@ -9,6 +9,10 @@
 
 
   }
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .contacts-link {
