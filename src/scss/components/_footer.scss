@@ -233,4 +233,9 @@
       background-color: var(--color-primary-contrast);
     }
   }
+
+  @include big-desktop {
+    bottom: 20px;
+    right: 20px;
+  }
 }

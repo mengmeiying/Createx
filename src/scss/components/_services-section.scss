@@ -21,7 +21,7 @@
   position: relative;
 
   display: block;
-  padding: 90px 39px;
+  padding: 90px 15px;
   background-color: var(--color-light);
   border: 1px solid #E5E8ED;
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
@@ -86,6 +86,10 @@
     line-height: 150%;
     color: var(--color-ebony);
     transition: color 0.3s ease-in-out;
+
+    @include mini-desktop {
+      font-size: 18px;
+    }
   }
 
   &:hover {

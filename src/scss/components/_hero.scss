@@ -45,6 +45,10 @@
         color: var(--color-gray);
       }
     }
+
+    @include big-desktop {
+      display: none;
+    }
   }
 
   &__pag {

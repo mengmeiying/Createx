@@ -18,6 +18,10 @@
 
   &__nav {
     margin-left: -112px;
+
+    @include mini-desktop {
+      margin-left: 0;
+    }
   }
 }
 
@@ -25,5 +29,9 @@
   &:focus {
     outline: 1px solid var(--color-primary);
     outline-offset: 3px;
+  }
+
+  @include mini-desktop {
+    max-width: 100px;
   }
 }

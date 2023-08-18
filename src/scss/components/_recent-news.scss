@@ -15,7 +15,7 @@
 
 
   &__item {
-
+    display: flex;
     grid-column: 5 span;
 
     &:first-child {
