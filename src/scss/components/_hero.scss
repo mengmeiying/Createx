@@ -9,6 +9,11 @@
   background-repeat: no-repeat;
   background-color: var(--color-gray);
 
+  @include small-tablet {
+    padding-top: 150px;
+    padding-bottom: 200px;
+  }
+
   &__content {
     max-width: 577px;
   }
@@ -60,7 +65,13 @@
     bottom: 120px !important;
     max-width: var(--container-width);
     padding-left: max(15px, calc((100% - var(--container-width) + var(--container-offset) * 2) / 2));
+    padding-right: 15px;
     text-align: left;
+
+    @include small-tablet {
+      gap: 7px;
+      bottom: 90px !important;
+    }
 
     .swiper-pagination-bullet {
       border-radius: 0;
@@ -69,6 +80,10 @@
       background-color: transparent;
       text-align: left;
       opacity: 1;
+
+      @include small-tablet {
+        width: 120px;
+      }
 
       &::before {
         counter-increment: pag;
@@ -80,13 +95,17 @@
         line-height: 150%;
         opacity: 0.6;
         transition: opacity 0.3s ease-in-out;
+
+        @include small-tablet {
+          font-size: 20px;
+        }
       }
 
       &::after {
         content: "";
         display: block;
         border-radius: 4px;
-        width: 178px;
+        width: 100%;
         height: 2px;
         background-color: var(--color-light);
         opacity: 0.3;

@@ -2,6 +2,10 @@
   padding-top: 68px;
   background-color: var(--color-lightgray);
 
+  @include small-tablet {
+    padding-bottom: 30px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -17,6 +21,10 @@
 
     @include mini-desktop {
       max-width: 55%;
+    }
+
+    @include mobile {
+      max-width: 90%;
     }
   }
 
@@ -36,6 +44,10 @@
 
     @include mini-desktop {
       width: 43%;
+    }
+
+    @include mobile {
+      display: none;
     }
   }
 

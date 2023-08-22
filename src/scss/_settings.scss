@@ -125,6 +125,10 @@ a {
   &--home {
     color: var(--color-light);
   }
+
+  @include small-tablet {
+    font-size: 60px;
+  }
 }
 
 .main-descr {
@@ -137,6 +141,10 @@ a {
   &--home {
     margin-bottom: 61px;
     color: var(--color-light);
+  }
+
+  @include small-tablet {
+    font-size: 16px;
   }
 }
 
@@ -154,6 +162,11 @@ a {
   text-align: center;
   color: var(--color-light);
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+  @include small-tablet {
+    padding: 10px 28px;
+    font-size: 14px;
+  }
 
   &--fill {
     border-color: var(--color-primary);
@@ -246,10 +259,18 @@ a {
   &--center {
     text-align: center;
   }
+
+  @include small-tablet {
+    font-size: 16px;
+  }
 }
 
 .section-offset {
   padding-top: 120px;
+
+  @include small-tablet {
+    padding-top: 60px;
+  }
 }
 
 .custom-checkbox {

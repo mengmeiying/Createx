@@ -10,6 +10,17 @@ const portfolioSwiper = new Swiper(portfolioEl, {
   navigation: {
     nextEl: '.portfolio-section__next',
     prevEl: '.portfolio-section__prev'
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    425: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 3
+    }
   }
 });
 
