@@ -2,10 +2,19 @@
   padding-bottom: 120px;
   background-color: var(--color-light);
 
+  @include small-tablet {
+    padding-bottom: 60px;
+  }
+
   &__top {
     @include flex-all-sb;
     align-items: flex-end;
     margin-bottom: 48px;
+
+    @include mobile {
+      flex-wrap: wrap;
+      transform: none;
+    }
   }
 
   &__title {

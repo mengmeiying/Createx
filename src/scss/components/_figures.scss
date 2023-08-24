@@ -5,6 +5,11 @@
   background-position: top -150px left;
   background-repeat: no-repeat;
 
+  @include mobile {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+
   &__title {
     margin-bottom: 60px;
   }

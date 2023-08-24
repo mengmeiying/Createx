@@ -14,12 +14,18 @@
     padding-bottom: 200px;
   }
 
+  @include mobile {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   &__content {
     max-width: 577px;
   }
 
   &__btns {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
   }
 
@@ -71,6 +77,10 @@
     @include small-tablet {
       gap: 7px;
       bottom: 90px !important;
+    }
+
+    @include mobile {
+      display: none;
     }
 
     .swiper-pagination-bullet {

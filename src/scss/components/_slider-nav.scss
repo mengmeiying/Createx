@@ -5,6 +5,10 @@
   z-index: 15;
   transform: translateX(12px);
 
+  @include mobile {
+    transform: none;
+  }
+
   &__btn {
     @include flex-all-center;
     border-radius: 100%;

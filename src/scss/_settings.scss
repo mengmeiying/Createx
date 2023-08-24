@@ -129,6 +129,10 @@ a {
   @include small-tablet {
     font-size: 60px;
   }
+
+  @include mobile {
+    font-size: 36px;
+  }
 }
 
 .main-descr {
@@ -244,6 +248,10 @@ a {
     font-size: 36px;
   }
 
+  @include mobile {
+    font-size: 28px;
+  }
+
   &--center {
     text-align: center;
   }
@@ -262,6 +270,10 @@ a {
 
   @include small-tablet {
     font-size: 16px;
+  }
+
+  @include mobile {
+    margin-bottom: 35px;
   }
 }
 

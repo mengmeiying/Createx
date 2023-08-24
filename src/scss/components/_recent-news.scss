@@ -3,6 +3,10 @@
   padding-bottom: 120px;
   background-color: var(--color-light);
 
+  @include small-tablet {
+    padding-bottom: 60px;
+  }
+
   &__title {
     margin-bottom: 59px;
   }
@@ -14,9 +18,15 @@
     @include tablet {
       grid-template-rows: initial;
     }
+
+    @include small-tablet {
+      margin-bottom: 50px;
+    }
+
+    @include mobile {
+      gap: 30px 0;
+    }
   }
-
-
 
   &__item {
     display: flex;
@@ -133,6 +143,11 @@
 .article-meta {
   display: flex;
   gap: 25px;
+
+  @include mobile {
+    flex-wrap: wrap;
+    gap: 10px 25px;
+  }
 
   &__item {
     position: relative;

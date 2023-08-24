@@ -4,6 +4,10 @@
   overflow: hidden;
   border-radius: 4px;
 
+  @include mobile {
+    height: 300px;
+  }
+
   &::before {
     position: absolute;
     content: "";

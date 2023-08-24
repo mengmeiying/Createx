@@ -8,8 +8,8 @@
     position: relative;
     gap: 49px 30px;
 
-    @include small-tablet {
-
+    @include mobile {
+      gap: 35px 0;
     }
   }
 
@@ -29,6 +29,11 @@
     align-items: flex-start;
     gap: 60px;
     margin-bottom: 22px;
+
+    @include mobile {
+      gap: 30px;
+      flex-wrap: wrap;
+    }
   }
 
   &__form {
@@ -194,6 +199,11 @@
     justify-items: start;
   }
 
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -225,6 +235,10 @@
 
   &__col:last-child {
     padding-left: 33px;
+
+    @include mobile {
+      padding-left: 0;
+    }
   }
 }
 

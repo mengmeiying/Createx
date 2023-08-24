@@ -6,6 +6,10 @@
     gap: 30px;
   }
 
+  @include mobile {
+    flex-wrap: wrap;
+  }
+
   &__subtitle {
     margin: 0;
     font-weight: 700;
@@ -15,6 +19,10 @@
 
     @include small-tablet {
       font-size: 22px;
+    }
+
+    @include mobile {
+      text-align: center;
     }
   }
 }
