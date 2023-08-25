@@ -2,14 +2,35 @@
   padding-top: 120px;
   padding-bottom: 120px;
 
+  &__content {
+    @include mobile {
+      gap: 20px 0;
+    }
+  }
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   &__img {
     grid-column: 5 span;
+
+    @include tablet {
+      grid-column: 12 span;
+    }
   }
 
   &__form {
     width: 600px;
     grid-column: 7 span;
     justify-self: end;
+
+    @include tablet {
+      grid-column: 12 span;
+      justify-self: auto;
+      width: auto;
+    }
   }
 
   &__inputs {
@@ -17,6 +38,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 26px 30px;
     margin-bottom: 41px;
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 30px;
+    }
   }
 
   &__input {
@@ -41,12 +67,25 @@
 
   &__textarea-label {
     grid-column: 2 span;
+
+    @include mobile {
+      grid-column: 1 span;
+    }
   }
 
   &__submit {
     display: flex;
     justify-content: space-between;
     gap: 75px;
+
+    @include tablet {
+      gap: 40px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__checkbox {
