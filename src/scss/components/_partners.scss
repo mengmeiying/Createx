@@ -3,6 +3,10 @@
   padding-bottom: 50px;
   background-color: var(--color-lightgray);
 
+  @include mobile {
+    padding-top: 40px;
+  }
+
   &__title {
     margin-bottom: 60px;
   }
@@ -39,12 +43,22 @@
     padding-top: 180px;
     padding-bottom: 118px;
     background-color: var(--color-light);
+
+    @include mobile {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
 
   &--about {
     padding-top: 120px;
     padding-bottom: 78px;
     background-color: var(--color-light);
+
+    @include mobile {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
 
     .partners__title {
       margin-bottom: 22px;

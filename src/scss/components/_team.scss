@@ -5,14 +5,25 @@
   background-repeat: no-repeat;
   background-position: left bottom;
 
-
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
 
   &__list {
     gap: 59px var(--grid-gap);
+
+    @include mobile {
+      gap: 20px 15px;
+    }
   }
 
   &__image {
     border-radius: 4px;
+
+    @include small-tablet {
+      width: 100%;
+    }
   }
 
   &__item {
@@ -21,6 +32,10 @@
       & .team__socials {
         transform: none;
       }
+    }
+
+    @include small-tablet {
+      grid-column: 6 span;
     }
   }
 
@@ -33,6 +48,11 @@
   &__descr {
     @include flex-column-center;
     padding: 16px 20px 0 20px;
+
+    @include tablet {
+      padding: 14px 10px 0 10px;
+      align-items: start;
+    }
   }
 
   &__name {
@@ -42,6 +62,10 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 150%;
+
+    @include tablet {
+      font-size: 16px;
+    }
   }
 
   &__status {
@@ -49,11 +73,19 @@
     color: var(--color-storm);
     font-size: 16px;
     line-height: 160%;
+
+    @include tablet {
+      font-size: 14px;
+    }
   }
 
   &__positions {
     margin-top: 80px;
     margin-bottom: 0;
+
+    @include mobile {
+      margin-top: 40px;
+    }
 
     & a {
       color: var(--color-primary);
