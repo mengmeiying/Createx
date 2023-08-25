@@ -2,6 +2,10 @@
   @include flex-v-center;
   gap: 22px;
 
+  @include mobile {
+    flex-wrap: wrap;
+  }
+
   &__item {
     position: relative;
 

@@ -11,6 +11,11 @@
     0px 12px 10px -6px rgba(30, 33, 44, 0.08),
     0px 26px 24px -10px rgba(30, 33, 44, 0.10),
     0px 60px 80px -20px rgba(30, 33, 44, 0.16);
+
+    @include mobile {
+      min-width: 320px;
+      width: 100%;
+    }
   }
 
   &__close {
