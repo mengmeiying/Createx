@@ -18,6 +18,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: calc(var(--interior-benefits-gap) * 2);
     margin-bottom: 27px;
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
   }
 
   &__item {
@@ -27,6 +32,11 @@
     background-size: 48px 48px;
     background-repeat: no-repeat;
     background-position: top center;
+
+    @include mobile {
+      padding-top: 40px;
+      background-size: 30px 30px;
+    }
 
     &:not(:last-child) {
       &::after {
@@ -40,6 +50,10 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+
+        @include tablet {
+          display: none;
+        }
       }
     }
 
@@ -76,5 +90,9 @@
     position: relative;
     top: 75px;
     width: 390px;
+
+    @include mobile {
+      width: 80%;
+    }
   }
 }

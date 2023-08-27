@@ -3,8 +3,8 @@ import Swiper, { Navigation, Pagination, Thumbs } from 'swiper';
 Swiper.use([Navigation, Pagination, Thumbs]);
 const portfolioEl = document.querySelector('.portfolio-section__slider');
 const portfolioSwiper = new Swiper(portfolioEl, {
-  slidesPerView: 3,
-  spaceBetween: 30,
+  slidesPerView: 1,
+  spaceBetween: 20,
   loop: true,
   watchSlidesProgress: true,
   navigation: {
@@ -19,7 +19,12 @@ const portfolioSwiper = new Swiper(portfolioEl, {
       slidesPerView: 2
     },
     768: {
-      slidesPerView: 3
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1100: {
+      slidesPerView: 3,
+      spaceBetween: 30
     }
   }
 });
@@ -38,13 +43,32 @@ const testimonialsSwiper = new Swiper(testimonialsEl, {
 
 const relatedProjectsEl = document.querySelector('.related-projects__slider');
 const relatedProjectsSwiper = new Swiper(relatedProjectsEl, {
-  slidesPerView: 3,
-  spaceBetween: 30,
+  slidesPerView: 1,
+  spaceBetween: 20,
   loop: true,
   watchSlidesProgress: true,
   navigation: {
     nextEl: '.related-projects__next',
     prevEl: '.related-projects__prev'
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    425: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1100: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
   }
 });
 

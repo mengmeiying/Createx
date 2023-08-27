@@ -3,10 +3,29 @@
   padding-bottom: 119px;
   counter-reset: how-we-do;
 
+  @include mobile {
+    padding-bottom: 70px;
+  }
+
+  &__list {
+    @include mobile {
+      gap: 20px 0;
+    }
+  }
+
   &__item {
     position: relative;
     grid-column: 3 span;
     padding-top: 38px;
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+
+    @include mobile {
+      grid-column: 12 span;
+      padding-top: 20px;
+    }
 
     &::before {
       content: "0"counter(how-we-do);
@@ -18,6 +37,10 @@
       font-size: 46px;
       font-weight: 700;
       line-height: 130%;
+
+      @include mobile {
+        font-size: 38px;
+      }
     }
 
     &:not(:last-child) {
@@ -30,6 +53,10 @@
         height: 1px;
 
         background-image: url('../img/how-we-do-line.svg');
+
+        @include tablet {
+          display: none;
+        }
       }
 
     }
