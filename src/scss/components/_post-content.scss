@@ -1,6 +1,10 @@
 .post {
   margin-top: -80px;
 
+  @include small-tablet {
+    margin-top: -20px;
+  }
+
   &__image {
     width: 100%;
     border-radius: 4px;
@@ -50,6 +54,11 @@
       font-weight: 700;
       line-height: 150%;
 
+      @include mobile {
+        padding-left: 0px;
+        padding-top: 30px;
+      }
+
       &::before {
         content: "";
         position: absolute;
@@ -58,6 +67,10 @@
         width: 28px;
         height: 20px;
         background-image: url("../img/braces.svg");
+
+        @include mobile {
+          top: 0;
+        }
       }
     }
 

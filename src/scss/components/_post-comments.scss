@@ -21,6 +21,11 @@
   display: flex;
   gap: 30px;
 
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   &__left {
     flex-shrink: 0;
     width: 150px;

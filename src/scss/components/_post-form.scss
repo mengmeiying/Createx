@@ -2,6 +2,11 @@
   padding-top: 60px;
   padding-bottom: 180px;
 
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
   &__title {
     margin-bottom: 50px;
   }
@@ -11,10 +16,18 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 24px 30px;
     margin-bottom: 48px;
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__textarea-label {
     grid-column: 2 span;
+
+    @include mobile {
+      grid-column: 1 span;
+    }
   }
 
   &__caption {

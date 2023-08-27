@@ -207,6 +207,11 @@
   &__left {
     display: flex;
     gap: 24px;
+
+    @include mobile {
+      flex-wrap: wrap;
+      gap: 10px 24px;
+    }
   }
 
   &__right {
