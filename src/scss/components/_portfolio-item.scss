@@ -46,10 +46,12 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
+    text-align: center;
     color: var(--color-ebony);
 
     @include mini-desktop {
       font-size: 18px;
+      min-height: 54px;
     }
 
     @include mobile {
