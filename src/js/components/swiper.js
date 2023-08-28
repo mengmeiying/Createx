@@ -76,10 +76,17 @@ const relatedProjectsSwiper = new Swiper(relatedProjectsEl, {
 
 const workImagesElNav = document.querySelector('.work-images__slider-nav');
 const workImagesSwiperNav = new Swiper(workImagesElNav, {
-  slidesPerView: 10,
+  slidesPerView: 5,
   spaceBetween: 20,
   freeMode: true,
-
+  breakpoints: {
+    568: {
+      slidesPerView: 7
+    },
+    1024: {
+      slidesPerView: 10,
+    }
+  }
 });
 
 const workImagesEl = document.querySelector('.work-images__slider');

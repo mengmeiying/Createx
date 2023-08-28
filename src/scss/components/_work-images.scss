@@ -21,6 +21,16 @@
     transform: translateY(-50%);
     z-index: 10;
     background-color: #ffffff80;
+
+    @include mobile {
+      left: 20px;
+      width: 30px;
+      height: 30px;
+      & svg {
+        height: 14px;
+        width: 14px;
+      }
+    }
   }
 
   &__next {
@@ -30,6 +40,16 @@
     transform: translateY(-50%);
     z-index: 10;
     background-color: #ffffff80;
+
+    @include mobile {
+      right: 20px;
+      width: 30px;
+      height: 30px;
+      & svg {
+        height: 14px;
+        width: 14px;
+      }
+    }
   }
 
   &__slider-nav {

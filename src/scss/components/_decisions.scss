@@ -2,22 +2,41 @@
   padding-top: 79px;
   background-color: var(--color-lightgray);
 
+  &__container {
+    @include mobile {
+      gap: 30px 0;
+    }
+  }
+
   &__image {
     margin-bottom: -62px;
+
+    @include small-tablet {
+      margin-bottom: 0;
+    }
   }
 
   &__left {
     grid-column: 6 span;
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
   }
 
   &__right {
     grid-column: 6 span;
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: 20.5px;
+    padding-bottom: 40px;
   }
 
   &__item {
@@ -33,5 +52,9 @@
 
   &__title {
     margin-bottom: 60px;
+
+    @include small-tablet {
+      margin-bottom: 30px;
+    }
   }
 }

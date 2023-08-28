@@ -15,6 +15,10 @@
 
   &--similar {
     padding-bottom: 120px;
+
+    @include mobile {
+      padding-bottom: 40px;
+    }
   }
 
   &__top {
