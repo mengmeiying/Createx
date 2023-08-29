@@ -1,8 +1,11 @@
 .header {
+  position: relative;
   &__container {
     @include flex-all-sb;
     padding-top: 23px;
     padding-bottom: 21px;
+
+    transition: background-color 0.3s ease-in-out;
   }
 
   &--main {
