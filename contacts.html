@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Createx</title>
+  <link rel="preload" href="fonts/lato-black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ubuntu-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ubuntu.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header header--secondary">
+  <div class="container header__container" data-menu>
+    <a class="logo" href="index.html"><img src="../img/logo.svg" alt="Createx logo"></a>
+    <nav class="nav">
+      <ul class="list-reset nav__list header__nav">
+        <li class="nav__item"><a class="nav__link" href="about-us.html">About Us</a></li>
+        <li class="nav__item"><a class="nav__link" href="services.html">Services</a></li>
+        <li class="nav__item"><a class="nav__link" href="work.html">Work</a></li>
+        <li class="nav__item"><a class="nav__link" href="news.html">News</a></li>
+        <li class="nav__item"><a class="nav__link nav__link--current" href="contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="header-contacts">
+      <a href="tel:4055550128" class="header-contacts__link contacts-link contacts-link--call">
+        <span class="contacts-link__caption">Call us</span>
+        <span class="contacts-link__value">(405) 555-0128</span>
+      </a>
+      <a href="mailto:hello@createx.com" class="header-contacts__link contacts-link contacts-link--mail">
+        <span class="contacts-link__caption">Talk to us</span>
+        <span class="contacts-link__value">hello@createx.com</span>
+      </a>
+    </div>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="page-hero page-hero--contacts">
+  <div class="container">
+    <ul class="list-reset breadcrumbs page-hero__breadcrumbs">
+      <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Homepage</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Contacts</a></li>
+    </ul>
+    <h1 class="page-hero__title">
+      Contacts
+    </h1>
+    <p class="page-hero__descr">Contact us for all your construction needs. We always welcome any questions and comments.</p>
+  </div>
+</section>
+
+      <section class="contacts-us">
+  <div class="container">
+    <h2 class="title title--center">Contact us</h2>
+    <p class="descr descr--center">Please complete the form. Detailed information will help us to make a tuned offer.</p>
+    <div class="contacts-us__content grid">
+      <img class="contacts-us__img" src="./img/contacts-form.jpg" alt="Photo of woman">
+      <form action="" class="contacts-us__form">
+        <div class="contacts-us__inputs">
+          <label class="form-field">
+            <span class="form-field__caption contacts-us__caption">Name*</span>
+            <input class="form-field__input contacts-us__input" type="text" placeholder="Your name" required>
+          </label>
+          <label class="form-field">
+            <span class="form-field__caption contacts-us__caption">I am interested in</span>
+            <select name="interested" class="contacts-us__select">
+              <option value="">Choose option</option>
+              <option value="Interior_design">Interior Design</option>
+            </select>
+          </label>
+          <label class="form-field">
+            <span class="form-field__caption contacts-us__caption">Phone*</span>
+            <input class="form-field__input contacts-us__input" type="tel" placeholder="Your phone number" required>
+          </label>
+          <label class="form-field">
+            <span class="form-field__caption contacts-us__caption">Location*</span>
+            <select name="location" class="contacts-us__select">
+              <option value="">Choose location</option>
+              <option value="New_York">New York</option>
+            </select>
+          </label>
+          <label class="form-field">
+            <span class="form-field__caption contacts-us__caption">Email</span>
+            <input class="form-field__input contacts-us__input" type="email" placeholder="Your working email">
+          </label>
+          <fieldset class="contacts-us__fields">
+            <legend class="form-field__caption contacts-us__caption">Preferred contact method</legend>
+            <div class="contacts-us__radio-wrapper">
+              <label class="form-field form-field--radio custom-radio">
+                <input class="custom-radio__input" type="radio" name="contact" id="phone" value="phone" checked>
+                <span class="custom-radio__box"></span>
+                <span class="form-field__caption contacts-us__caption custom-radio__text">Phone</span>
+              </label>
+              <label class="form-field form-field--radio custom-radio">
+                <input class="custom-radio__input" type="radio" name="contact" id="email" value="email">
+                <span class="custom-radio__box"></span>
+                <span class="form-field__caption contacts-us__caption custom-radio__text">Email</span>
+              </label>
+              <label class="form-field form-field--radio custom-radio">
+                <input class="custom-radio__input" type="radio" name="contact" id="viber" value="viber">
+                <span class="custom-radio__box"></span>
+                <span class="form-field__caption contacts-us__caption custom-radio__text">Viber</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="form-field contacts-us__textarea-label">
+            <span class="form-field__caption contacts-us__caption">Message*</span>
+            <textarea class="form-field__input contacts-us__input contacts-us__input--big" name="" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
+          </label>
+        </div>
+        <div class="contacts-us__submit">
+          <label class="custom-checkbox contacts-us__checkbox">
+            <input class="custom-checkbox__input" type="checkbox" name="" id="" checked>
+            <span class="custom-checkbox__box"></span>
+            <span class="custom-checkbox__text contacts-us__text">I agree to receive communications from Createx Construction Bureau.</span>
+          </label>
+          <button class="contacts-us__button btn-reset btn btn--fill">Send request</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+      <section class="offices">
+  <div class="container">
+    <h2 class="title title--center">Our offices</h2>
+    <p class="descr descr--center">
+      Give us a call, send us a note or visit our office. We can’t wait to hear from you!
+    </p>
+    <ul class="offices__list list-reset">
+      <li class="offices__item">
+        <h3 class="offices__title">New York, USA</h3>
+        <p class="offices__address">8502 Preston Rd. Inglewood, New York 98380</p>
+        <a href="#" class="offices__link">See on the map</a>
+        <ul class="offices__contacts-list contacts-list list-reset">
+          <li class="contacts-list__item">
+            <span class="contacts-list__title">Call:</span>
+            <a href="tel:4055550128" class="contacts-list__link">(405) 555-0128</a>
+          </li>
+          <li class="contacts-list__item">
+            <span class="contacts-list__title">Email:</span>
+            <a href="mailto:hello@createx.com" class="contacts-list__link">hello@createx.com</a>
+          </li>
+          <li class="contacts-list__item">
+            <span class="contacts-list__title">Schedule:</span>
+            <span class="contacts-list__data">Mon — Fri 9:00 — 18:00</span>
+          </li>
+        </ul>
+      </li>
+      <li class="offices__item">
+        <h3 class="offices__title">New Jersey, USA</h3>
+        <p class="offices__address">2464 Royal Ln. Mesa, New Jersey 45463</p>
+        <a href="#" class="offices__link">See on the map</a>
+        <ul class="offices__contacts-list contacts-list list-reset">
+          <li class="contacts-list__item">
+            <span class="contacts-list__title">Call:</span>
+            <a href="tel:8085550111" class="contacts-list__link">(808) 555-0111</a>
+          </li>
+          <li class="contacts-list__item">
+            <span class="contacts-list__title">Email:</span>
+            <a href="mailto:hello@createx.com" class="contacts-list__link">hello@createx.com</a>
+          </li>
+          <li class="contacts-list__item">
+            <span class="contacts-list__title">Schedule:</span>
+            <span class="contacts-list__data">Mon — Fri 9:00 — 18:00</span>
+          </li>
+        </ul>
+      </li>
+      <li class="offices__item">
+        <h3 class="offices__title">San Francisco, USA</h3>
+        <p class="offices__address">8502 Preston Rd. Inglewood, San Francisco 98380</p>
+        <a href="#" class="offices__link">See on the map</a>
+        <ul class="offices__contacts-list contacts-list list-reset">
+          <li class="contacts-list__item">
+            <span class="contacts-list__title">Call:</span>
+            <a href="tel:5055550125" class="contacts-list__link">(505) 555-0125</a>
+          </li>
+          <li class="contacts-list__item">
+            <span class="contacts-list__title">Email:</span>
+            <a href="mailto:hello@createx.com" class="contacts-list__link">hello@createx.com</a>
+          </li>
+          <li class="contacts-list__item">
+            <span class="contacts-list__title">Schedule:</span>
+            <span class="contacts-list__data">Mon — Fri 9:00 — 18:00</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2 class="title title--center">Find us at</h2>
+    <ul class="social list-reset">
+      <li class="social__item">
+        <a href="#" class="social__link" target="_blank" aria-label="Whatsapp">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#Whatsapp"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link" target="_blank" aria-label="Messenger">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#Messenger"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link" target="_blank" aria-label="Facebook">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#Facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link" target="_blank" aria-label="Twitter">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#Twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link" target="_blank" aria-label="Youtube">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#YouTube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container grid">
+    <a class="to-top">
+      <span class="to-top__text">Go to top</span>
+      <span class="to-top__icon">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#to-top"></use>
+        </svg>
+      </span>
+    </a>
+    <div class="footer__left">
+      <div class="footer__top">
+        <a href="#" class="logo footer__logo">
+          <img src="../img/logo-light.svg" alt="Createx logo">
+        </a>
+        <ul class="social list-reset">
+          <li class="social__item">
+            <a href="#" class="social__link" target="_blank" aria-label="Whatsapp">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#Whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" target="_blank" aria-label="Messenger">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#Messenger"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" target="_blank" aria-label="Facebook">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#Facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" target="_blank" aria-label="Twitter">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#Twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" target="_blank" aria-label="Youtube">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#YouTube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="footer__descr">Createx Construction Bureau has been successfully operating in the USA construction
+        market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set
+        the highest standards for construction sphere.</p>
+    </div>
+    <form action="#" class="footer__form footer-form">
+      <h3 class="footer-form__subtitle">Let’s stay in touch</h3>
+      <div class="footer-form__items">
+        <label class="form-field footer-form__field">
+          <input class="form-field__input footer-form__input" type="email" name="email" placeholder="Your email address">
+        </label>
+        <button class="footer-form__btn btn btn--fill">Subscribe</button>
+      </div>
+      <p class="footer-form__descr">*Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.</p>
+    </form>
+    <div class="footer-address footer__address">
+      <h3 class="footer-address__title footer__title">Head office</h3>
+      <ul class="footer-address__list list-reset">
+        <li class="footer-address__item">
+          <span class="footer-address__name">Address:</span>
+          8502 Preston Rd. Inglewood, New York
+        </li>
+        <li class="footer-address__item">
+          <span class="footer-address__name">Call:</span>
+          <a href="tel:4055550128" class="footer-address__link">(405) 555-0128</a>
+        </li>
+        <li class="footer-address__item">
+          <span class="footer-address__name">Email:</span>
+          <a href="mailto:hello@createx.com" class="footer-address__link">hello@createx.com</a>
+        </li>
+      </ul>
+    </div>
+    <nav class="footer-nav footer__nav" title="secondary navigation">
+      <div class="footer-nav__col">
+        <h3 class="footer-nav__title footer__title">Who we are</h3>
+        <ul class="list-reset footer-nav__list">
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">About Us</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">Available Positions</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav__col">
+        <h3 class="footer-nav__title footer__title">Our experience</h3>
+        <ul class="list-reset footer-nav__list">
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">Services</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">Work</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">News</a></li>
+        </ul>
+      </div>
+    </nav>
+    <small class="footer__copyright">© All rights reserved. Made with <span>by Createx Studio</span></small>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
